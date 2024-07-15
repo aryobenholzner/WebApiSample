@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "7.6.0",
+    "useDocker": true,
+    "generators":{
+      "dotnet-server": {
+        "generatorName": "aspnetcore",
+        "output": "../",
+        "inputSpec": "./petstore.yaml",
+        "additionalProperties": {
+          "aspnetCoreVersion": "6.0",
+          "buildTarget": "library",
+          "isLibrary": true,
+          "packageName": "WebApiSample.Api",
+          "swashbuckleVersion": "6.4.0",
+          "useSeparateModelProject": true,
+          "sourceFolder": "./"
+        }
+      }
+    }
+  }
+}

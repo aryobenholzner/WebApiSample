@@ -4,3 +4,6 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 node_modules
+.openapi-generator
+WebApiSample.Api
+WebApiSample.Api.Models
