@@ -7,6 +7,6 @@
   },
   "private": true,
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "^2.13.4"
+    "@openapitools/openapi-generator-cli": "^2.18.4"
   }
 }
