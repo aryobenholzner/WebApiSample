@@ -1,0 +1,35 @@
+name: Build and run tests
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+  
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+  
+      - name: run openapi generator
+        working-directory: src/Api
+        run: |
+          npm install
+          npm run openapi-generate
+          
+      - name: dotnet build
+        run: dotnet build
+        
+      - name: dotnet test
+        run: dotnet test
