@@ -5,7 +5,7 @@ on:
       - '**'
 
 jobs:
-  openapi-generate:
+  build-and-test:
     runs-on: ubuntu-latest
     
     steps:
@@ -16,9 +16,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
+          
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
   
       - name: run openapi generator
+        working-directory: src/Api
         run: |
-          cd src/Api
           npm install
           npm run openapi-generate
+          
+      - name: dotnet build
+        run: dotnet build
+        
+      - name: dotnet test
+        run: dotnet test
