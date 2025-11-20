@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSample", "WebApiSample\WebApiSample.csproj", "{F45B70B8-0D26-4F40-AA45-B914DC8B3653}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSample", "src\WebApiSample\WebApiSample.csproj", "{F45B70B8-0D26-4F40-AA45-B914DC8B3653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSample.Api", "WebApiSample.Api\WebApiSample.Api.csproj", "{51DE9291-4545-46D2-B450-2FBB867655AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSample.Api", "src\WebApiSample.Api\WebApiSample.Api.csproj", "{51DE9291-4545-46D2-B450-2FBB867655AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSample.Api.Models", "WebApiSample.Api.Models\WebApiSample.Api.Models.csproj", "{9DB32E6A-B327-48DC-B9C0-C26F6B901CC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSample.Api.Models", "src\WebApiSample.Api.Models\WebApiSample.Api.Models.csproj", "{9DB32E6A-B327-48DC-B9C0-C26F6B901CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
